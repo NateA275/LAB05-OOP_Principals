@@ -34,3 +34,15 @@ Calling .FamilyUnit() from a BottleNose instantiation is similar to the behavior
 
 Preventing access to implementation details.
 By using 'protected' classes, you limit implementation and visibility to only a scope within the class and child classes.
+
+
+## Interfaces
+
+Interfaces are used to define interaction with an object.
+I think of several differnt balls. A football, a baseball, and a basketball.
+All three of these objects can be thorwn, but none of their throwing operation are the same.
+A basketball isnt thrown the same way a baseball is, and a football isnt thrown the same way a basketball is, and so on.
+So the interface class in this example would define the 'contract' with all of the object balls, and reqire a thorw method.
+The objects would meet this required contract by implementing the throw method in whichever way is most appropriate.
+
+In this project, I defined my interfaces as IFly and ISwim, which define the Animal-objects ability to either Fly or Swim.
