@@ -7,7 +7,7 @@ using I_Built_A_Zoo.Classes;
 namespace Zoo_Tests
 {
     public class UnitTest1
-    {
+    { 
         [Fact]
         public void ASnowyOwlisInOwls()
         {
