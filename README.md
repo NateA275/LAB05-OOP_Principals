@@ -10,7 +10,7 @@ Encapsulation is used to prevent access to implementation details.
 
 ## Visuals
 
-![diagram](./I_Built_A_Zoo/Assets/zoo_diagram.PNG)
+![diagram](./I_Built_A_Zoo/Assets/zoo_image.PNG)
 
 ## Breakdown
 
