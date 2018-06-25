@@ -4,16 +4,17 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    abstract class Reptiles : Vertibrates
+    public abstract class Reptiles : Vertibrates
     {
-        public override string Metabolism()
-        {
-            return "cold blooded";
-        }
+        //Properties
+        public override string Metabolism { get; set; }
+        public override string SkinCovering { get; set; }
 
-        public string SkinCovering()
+        //Constructor
+        public Reptiles()
         {
-            return "scales";
+            Metabolism = "cold-blooded";
+            SkinCovering = "scales";
         }
     }
 }

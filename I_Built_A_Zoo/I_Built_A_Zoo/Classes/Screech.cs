@@ -4,17 +4,19 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 { 
-    class Screech : Owl
+    public class Screech : Owls
     {
-        public override string WingSpan()
-        {
-            return "18 - 24 inches";
-        }
+        //Properties
+        public override string Name { get; set; }
+        public override string WingSpan { get; set; }
+        public override string Size { get; set; }
 
-        public string Weight()
+        //Constructor
+        public Screech()
         {
-            return "4.3 - 8.6 ounces";
+            Name = "Screech Owl";
+            WingSpan = "18 - 24 inches";
+            Size = $"4.3 - 8.6 ounces, with a wingspan of {WingSpan}";
         }
-
     }
 }

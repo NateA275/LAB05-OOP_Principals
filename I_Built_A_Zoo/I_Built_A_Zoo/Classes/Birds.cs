@@ -4,21 +4,19 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    abstract class Birds : Vertibrates
+    public abstract class Birds : Vertibrates
     {
-        public override string Metabolism()
-        {
-            return "warm blooded";
-        }
+        //Properties
+        public override string Metabolism { get; set; }
+        public override bool LiveBirth { get; set; }
+        public override string SkinCovering { get; set; }
 
-        public override bool LiveBirth()
+        //Constructor
+        public Birds()
         {
-            return false;
-        }
-
-        public string SkinCovering()
-        {
-            return "feathers";
+            Metabolism = "warm-blooded";
+            LiveBirth = false;
+            SkinCovering = "feathers";
         }
     }
 }

@@ -6,7 +6,7 @@ namespace I_Built_A_Zoo.Interfaces
 {
     public interface IFly
     {
-        string WingSpan();
+        string WingSpan { get; set; }
 
         string CoveredEnclosure();
 

@@ -4,11 +4,17 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    class Anaconda : Boa
+    public class Anaconda : Boas
     {
-        public string Length()
+        //Properties
+        public override string Name { get; set; }
+        public override string Size { get; set; }
+
+        //Constructor
+        public Anaconda()
         {
-            return "10 - 29 feet";
+            Name = "Anaconda";
+            Size = "10 - 29 feet";
         }
     }
 }

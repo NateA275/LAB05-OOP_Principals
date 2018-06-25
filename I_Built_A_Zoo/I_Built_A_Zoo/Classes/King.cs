@@ -4,16 +4,19 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    class King : Penguin
+    public class King : Penguins
     {
-        public override int WaterTemp()
-        {
-            return 48;
-        }
+        //Properties
+        public override string Name { get; set; }
+        public override int WaterTemp { get; set; }
+        public override string Size { get; set; }
 
-        public string Height()
+        //Constructor
+        public King()
         {
-            return "28 - 39 inches";
+            Name = "King Penguin";
+            WaterTemp = 48;
+            Size = "28 - 39 inches";
         }
     }
 }
