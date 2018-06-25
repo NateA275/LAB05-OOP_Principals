@@ -4,11 +4,17 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    class Constrictor : Boa
+    public class Constrictor : Boas
     {
-        public string Length()
+        //Properties
+        public override string Name { get; set; }
+        public override string Size { get; set; }
+
+        //Constructor
+        public Constrictor()
         {
-            return "3 - 13 feet";
+            Name = "Boa Constrictor";
+            Size = "3 - 13 feet";
         }
     }
 }

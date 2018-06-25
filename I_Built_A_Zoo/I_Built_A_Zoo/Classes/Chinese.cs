@@ -4,11 +4,17 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    class Chinese : Alligator
+    public class Chinese : Alligators
     {
-        public string Length()
+        //Properties
+        public override string Name { get; set; }
+        public override string Size { get; set; }
+
+        //Constructor
+        public Chinese()
         {
-            return "5 - 7 feet";
+            Name = "Chinese Alligator";
+            Size = "5 - 7 feet";
         }
     }
 }

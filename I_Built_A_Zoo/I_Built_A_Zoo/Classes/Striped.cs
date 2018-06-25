@@ -4,21 +4,21 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    class Striped : Dolphin
+    public class Striped : Dolphins
     {
-        public override string Salinity()
-        {
-            return "salt water";
-        }
+        //Properties
+        public override string Name { get; set; }
+        public override int WaterTemp { get; set; }
+        public override string Salinity { get; set; }
+        public override string Size { get; set; }
 
-        public override int WaterTemp()
+        //Constructor
+        public Striped()
         {
-            return 70;
-        }
-
-        public string Length()
-        {
-            return "7 - 9 feet";
+            Name = "Striped Dolphin";
+            WaterTemp = 70;
+            Salinity = "salt water";
+            Size = "7 - 9 feet";
         }
     }
 }

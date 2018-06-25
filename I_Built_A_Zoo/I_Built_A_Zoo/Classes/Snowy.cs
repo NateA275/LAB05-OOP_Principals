@@ -4,16 +4,19 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    class Snowy : Owl
+    public class Snowy : Owls
     {
-        public override string WingSpan()
-        {
-            return "49 - 59 inches";
-        }
+        //Properties
+        public override string Name { get; set; }
+        public override string WingSpan { get; set; }
+        public override string Size { get; set; }
 
-        public string Weight()
+        //Constructor
+        public Snowy()
         {
-            return "3.5 - 6.6 lbs";
+            Name = "Snowy Owl";
+            WingSpan = "49 - 59 inches";
+            Size = $"3.5 - 6.6 pounds, with a wingspan of {WingSpan}";
         }
     }
 }

@@ -4,21 +4,21 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    class Bottlenose : Dolphin
+    public class Bottlenose : Dolphins
     {
-        public override string Salinity()
-        {
-            return "salt water";
-        }
+        //Properties
+        public override string Name { get; set; }
+        public override string Salinity { get; set; }
+        public override int WaterTemp { get; set; }
+        public override string Size { get; set; }
 
-        public override int WaterTemp()
+        //Constructor
+        public Bottlenose()
         {
-            return 70;
-        }
-
-        public string Length()
-        {
-            return "6.6 - 13 feet";
+            Name = "Bottle Nosed Dolphin";
+            Salinity = "salt water";
+            WaterTemp = 70;
+            Size = "6.6 - 13 feet";
         }
     }
 }

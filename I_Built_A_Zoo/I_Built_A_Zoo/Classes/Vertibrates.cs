@@ -4,22 +4,28 @@ using System.Text;
 
 namespace I_Built_A_Zoo.Classes
 {
-    abstract class Vertibrates
+    public abstract class Vertibrates
     {
-        public bool HasBackBone = true;
+        //Properties
+        public abstract string Name { get; set; }
+        public bool HasBackBone { get; set; }
+        public virtual bool Nocturnal { get; set; }
+        public abstract string Metabolism { get; set; }
+        public abstract string Size { get; set; }
+        public abstract bool LiveBirth { get; set; }
+        public virtual string SkinCovering { get; set; }
 
-        public virtual bool Nocturnal()
+        //Constructor
+        public Vertibrates()
         {
-            return false;
+            HasBackBone = true;
+            Nocturnal = false;
         }
 
-        public abstract string Metabolism();
-
-        public abstract bool LiveBirth();
-
+        //Methods
         public virtual string FamilyUnit()
         {
-            return "Solitary";
+            return $"The {Name} is a solitary creature.";
         }
 
         public abstract string Diet();

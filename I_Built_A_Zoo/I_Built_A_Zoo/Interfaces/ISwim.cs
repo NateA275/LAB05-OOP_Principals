@@ -6,8 +6,8 @@ namespace I_Built_A_Zoo.Interfaces
 {
     public interface ISwim
     {
-        int WaterTemp();
+        int WaterTemp { get; set; }
 
-        string Salinity();
+        string Salinity { get; set; }
     }
 }
